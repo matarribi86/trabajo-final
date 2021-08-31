@@ -1,0 +1,186 @@
+.gridsIndex{
+        display: grid;
+        grid-template-areas: 
+        "cabeza    cabeza"
+        "cuerpo    cuerpo"
+        "pie       pie "
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.3fr;
+        align-items: center;
+        text-align: center;
+        grid-column-gap: 10px ;
+        grid-row-gap: 10px ;
+    }
+    header{
+        grid-area: cabeza;
+    }
+    main {
+        grid-area: cuerpo;
+    }
+    footer{
+        grid-area: pie;
+    }
+    
+    .gridCuerpo{
+        display: grid;
+        grid-template-areas: 
+        "mennu             mennu"
+        "logos            logos"
+        "titulo           titulo"
+        "identidad        imagenesCancha"
+        "imagenFigura     figuras"
+        "videoDescripcion video"
+        "mappa            calendario"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.06fr 0.08fr 0.1fr 1fr 1fr 0.8fr 0.8fr;
+        align-items: center;
+        text-align: center;
+        grid-column-gap: 10px ;
+        grid-row-gap: 10px ;
+    
+    }
+    #menu{
+        grid-area: mennu;
+    }
+    #logos{
+        grid-area: logos;
+    }
+    .titulo{
+        grid-area: titulo;
+        text-align: left;
+    }
+    #imagenesCancha{
+        grid-area: imagenesCancha;
+    }
+    #identidad{
+        grid-area: identidad;
+    }
+    #imagenFigura{
+        grid-area: imagenFigura;
+    }
+    #figuras{
+        grid-area: figuras;
+    }
+    #videoDescripcion{
+        grid-area: videoDescripcion;
+    }
+    #videoSemanal{
+        grid-area: video;
+    }
+    #mapa{
+        grid-area: mappa;
+    }
+    #calendarioIndex{
+        grid-area: calendario;
+    }
+
+    .grids{
+        display: grid;
+        grid-template-areas:
+        "data1    imagen1"
+        "imagen4  data4"
+        "data7    imagen7"
+    ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;	
+    
+    
+    }
+    
+    .data123{
+        grid-area: data1;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 10px 15px;
+    
+    }
+    .data456{
+        grid-area: data4;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 10px 15px;
+    }
+    .data789{
+        grid-area: data7;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 10px 15px;
+    }
+    .imagen123{
+        grid-area: imagen1;
+        justify-self: center;
+        
+    }
+    .imagen456{
+        grid-area: imagen4;
+        justify-self: center;
+    }
+    .imagen789{
+        grid-area: imagen7;
+        justify-self: center;
+    }
+
+    @media(min-width: 769px){}
+@media(max-width: 768px) {
+.grids{
+	display: grid;
+	grid-template-areas:
+	"data1"
+	"imagen1"
+	"data4"
+	"imagen4"
+	"data7"
+	"imagen7"
+;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+
+}
+.gridsIndex{
+	display: grid;
+	grid-template-areas: 
+	"mennu"
+	"logos"
+    "titulo"
+	"identidad"
+	"imagenesCancha"
+	"figuras"
+	"imagenFigura"
+	"videoDescripcion"
+	"video"
+	"mapa"
+	"calendario"
+;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.03fr 0.1fr 0.08fr 0.5fr 1fr 0.4fr 1fr 0.4fr 0.5fr 0.5fr 0.5fr;
+	align-items: center;
+	text-align: center;
+	grid-column-gap: 10px ;
+
+}	
+}
+
+@media(max-width: 576px){
+	.encabezado{align-items: start;
+		justify-content: center;
+		}
+	.tamañoEspecial{
+		font-size: 3.5rem;
+		font-weight: bolder;
+		font-style: oblique;
+		color: black;
+		animation: flash;
+		animation-duration: 6s !important;
+		animation-delay: 2s ;
+
+	}
+
+	header img{
+		display: none;
+	}
+	
+}

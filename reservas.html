@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EL LAGO</title>
+		<link rel="icon" href="./foto/golf.ico">
+		<link rel="stylesheet" type="text/css" rel="stylesheet" href="css/destino.css">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Raleway&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<meta name="description" content="Tenemos todos los horarios a disposicion para que te puedas acomodar y empezar a jugar con nosotros.">
+		<meta name="keywords" content="golf, clases de golf, clases, driving, cancha">
+		<title>Hace tu RESERVA para tomar clases y SALIDAS LIBRE.</title>
+	</head>
+	<body class="body" class="gridsIndex">
+	<header class="encabezado">
+		<h2 class="encabezado__p"  id="arriba">Driving <br>"EL LAGO"</h2>
+		<img src="./foto/logo a poner.png" alt="logo" class="encabezado__logo">
+	</header>
+		<main>
+		<section>
+		<div>
+		<nav>
+			<ul>
+			<li><a href="index.html">inicio</a></li>
+			<li><a href="cancha.html">campo de juego</a></li>
+			<li>profesores
+				<ul class="submenu">
+				   <li> <a href="profesores.html#profesionales"> Técnicos</a></li>
+				   <li> <a href="profesores.html#claseGrupal"> Clase grupal </a></li>
+				   <li> <a href="profesores.html#clasesIndividuales"> Clase individual</a></li>
+				   <li> <a href="profesores.html#conceptos"> Conceptos básicos</a></li>
+				</ul>
+			</li>
+			<li><a href="reservas.html">reservas</a></li>
+			<li><a href="autoridades.html">institucional</a></li>
+			</ul>
+		</nav>
+		</div>
+		<div class="centro">
+			<a href="./foto/jazz.mp3">
+			<img src="./foto/audio.jpg" alt="tweeter" class="centro__logo">
+			</a>	
+			<a href="https://twitter.com/tweeter?lang=es" target="_blank">
+			<img src="./foto/tweeter.png" alt="tweeter" class="centro__logo">
+			</a>
+			<a href="https://www.instagram.com/" target="_blank">
+			<img src="./foto/instagram.png" alt="instagram" class="centro__logo">
+			</a>
+			<a href="https://www.FACEBOOK.com/" target="_blank">
+			<img src="./foto/facebook.png" alt="facebook" class="centro__logo">	
+			</a>
+		</div>
+		</section>
+	<h1>Reserva de clases y práctica libre</h1>
+	<h2>Planilla de reserva</h2>
+	<form>
+		<fieldset>
+		<legend class="italica">Condición de reserva</legend>	
+		<label for="Profesores">Profesores:</label>
+		<select name="Profesores">
+			<option value="GJ">Gonzalez, Juan</option>
+			<option value="GR">Garcia, Raúl</option>
+			<option value="RM">Rogriguez, Matías</option>
+			<option value="LIBRE">Libre</option>
+		</select><br><br>
+		<label for="horario">Horario:</label>
+		<select name="horario">
+			<option value="09:00-10:00">09:00-10:00</option>
+			<option value="10:00-11:00">10:00-11:00</option>
+			<option value="11:00-12:00">11:00-12:00</option>
+        	<option value="12:00-13:00">12:00-13:00</option>
+			<option value="13:00-14:00">13:00-14:00</option>
+			<option value="13:00-15:00">14:00-15:00</option>
+			<option value="15:00-16:00">15:00-16:00</option>
+			<option value="16:00-17:00">16:00-17:00</option>
+			<option value="17:00-18:00">17:00-18:00</option>
+			<option value="18:00-19:00">18:00-19:00</option>
+		</select>
+		<h6 class="italica">Antes de reserar chequear los horarios del profesor seleccionado<a href="profesores.html">horarios disponibles</a>.</h6>
+		<div> clase individual</div>
+		<input type="radio" name="modalidad de clase" value="individual">
+		<div> clase grupal</div>
+		<input type="radio" name="modalidad de clase" value="grupal">
+		<div> driving libre</div>
+		<input type="radio" name="modalidad de clase" value="Libre">
+		</fieldset>
+		<fieldset>
+		<legend class="italica">Datos Personales</legend>
+		<label for="Apellido y Nombre">Nombre completo:</label>
+		<input type="text" name="Apellido y Nombre" placeholder="Juan Perez">
+		<br><br>
+		<label for="correo">e-mail:</label>
+		<input type="email" name="correo" placeholder="nombre@gmail.com">
+		<br><br>
+		<label for="confirma">Matriculado</label>
+		<input type="checkbox" name="confirma" value="1">
+		<br><br>
+		<label for="equipamiento">equipo personal:</label>
+		<select name="equipamiento">
+		<option value="nada">sin equipo</option>
+		<option value="equipo medio">equipo sin driver</option>
+		<option value="todo el equipo">equipo completo</option>
+		</select>
+		<br><br>
+		<label for="mano habil">Habilidad</label>
+		<div>Derecho</div>
+		<input type="radio" name="mano habil" value="derecha">
+		<div>Zurdo</div>
+		<input type="radio" name="mano habil" value="izquierda">
+		</fieldset>
+		<fieldset>
+		<legend class="italica">Información Adicional</legend>
+		<h6><i>Objetivo</i></h6>
+		<div> profesional</div>
+		<input type="radio" name="objetivo" value="profesional">
+		<div> hobbie</div>
+		<input type="radio" name="objetivo" value="hobbie">
+		<div> readaptación</div>
+		<input type="radio" name="objetivo" value="readaptación"><br><br>
+		<label for="Comentarios">Comentarios</label><br>
+		<textarea name="Comentarios" rows="8" cols="40">
+		</textarea><br>
+		<label for="información">Deseo recibir novedades</label>
+		<input type="checkbox" name="información" value="1"><br><br>
+		<input type="button" name="sin acciones">
+		<input type="reset" name="Limpiar">
+		<input type="submit" name="Enviar">
+		</fieldset>
+		</form>
+
+		<h2 class="italica">Reservas para torneos de la federación</h2>
+		<iframe src="https://ar.digitalgolftour.com/embed" frameborder="0" class="importado"></iframe>
+	</main>	
+	<footer>
+
+		<section class="anima">
+		<a href="#arriba">
+			<img src="./foto/up.png" alt="subir" class="logo">
+		</a>
+		</section>	
+	</section>	
+	<section class="Pie">
+		<div class="pie__centrar">
+		<img src="./foto/icono telefono.jpg" alt="icono tel" class="pie__logo">
+		<h4 class="Pie__letra">tel: 221-5487654--</h4>
+		</div>
+		<div class="pie__centrar">
+		<img src="./foto/icono e-mail.jpg" alt="icono mail" class="pie__logo">
+		<h4 class="Pie__letra">e-mail: ellago@driving.com</h4>
+		</div>
+		<div class="pie__centrar">
+		<address class="Pie__letra">Calle 449 n°2234, Springfield, Buenos Aires, Argentina</address>
+		</div>
+	</section>
+	</footer>
+</body>
+</html>

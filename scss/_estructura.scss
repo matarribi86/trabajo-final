@@ -1,0 +1,413 @@
+$tamaño:80%;
+
+.body{
+	background-color: #D6EAF8;
+}
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-weight: 1.8/(0.75*$i);
+    }
+
+}
+h1{	
+	color: #ABB2B9;
+	background-color: darkcyan;
+	font-size: 2.3rem;
+	margin: 10px 0px 40px 0px;
+	font-style: italic;
+	text-transform: uppercase;
+	width: 100%;
+	letter-spacing: 2px;
+}
+h2{ 
+	color: firebrick; 
+	text-decoration: underline;
+   margin: 15px 20px 30px 20px;
+	padding: 20px;
+	width: 500px;
+}
+
+h3{
+	color: firebrick;
+	text-decoration: underline;
+	margin: 20px 20px 20px 20px;
+	padding: 15px;
+	width: 200px;
+}
+p{
+	font-size: 1.0rem;
+	text-align: justify;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	margin: 10px 15x 5px 15px;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.bordesP{
+	border: 1px dashed black;
+	border-radius: 20px;
+
+}
+
+.margen{
+	width: 90%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.margen2{
+	width: $tamaño/2+10%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.tamaño{
+	width: 40%;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.buenosBordes{
+	border-radius: 2rem;
+	width: 500px;
+	height: 400px;
+	margin-left: 20px;
+}
+/*armando el calendario INDEX*/
+.calendario{
+	background-color: whitesmoke;
+	border: 8px solid #82E0AA;
+	border-radius: 25px;
+	width: 70%;
+	box-sizing: border-box;
+	margin: 10px 10px 10px 90px;
+	padding: 0px 0px 50px 10px;
+}
+.listaCalendario{ 
+	width: 80%;
+	height: 300px;
+	list-style: none;;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	margin-left: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+ }
+
+/*Fin calendario*/
+
+/*flex a los Div de CANCHA para ordenar las imagenes */
+
+ .flexElementos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 3px solid #D4AC0D;
+}
+.flexSinBorde{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*Fin plex en CANCHA */
+
+ .dayName{
+ 	background-color: darkseagreen;
+ 	font-weight: bold;
+	text-align: center;
+ }
+
+ /*Tamaño a el MAPA y VIDEO importado en INDEX */
+
+.importado{
+	width: 100%;
+	height: 450px;
+	padding: 30px 30px 30px 30px;
+	margin: 10px 10px 10px 10px;
+	background-image: url("../foto/pelotas.jpg");
+	border-radius: 30px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+
+/*Fin MAPA y VIDEO importado en INDEX */
+
+.logo{
+	width: 70px;
+	border: 4px solid #402E32;
+	border-radius: 35%;
+	margin: 2px 5px 15px 0px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 4px black;
+}
+
+.italica{
+	font-style: italic;
+}
+.subrrayado{
+	text-decoration: underline;
+}
+.negra{
+	font-weight: bold;
+}
+/*Diseño de Diccionario PROFESORES */
+dl{
+	margin-left: 45px;
+}
+dl td {
+   font-weight: bolder;
+   text-decoration: underline;
+}
+dl dd {
+   margin-left: 2em;
+}
+
+/*Fin diccionario */
+
+/*lista de hoyos CANCHA*/
+
+.listaHoyos{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border: 2px dashed black;
+	padding: 5px 30px 20px 30px;
+	border-radius: 25px;
+	margin: 20px;
+	list-style: none;
+}
+li{
+	list-style: none;
+	padding-left: 10px;
+	font-size: 19px;
+}
+div ol li h2{
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+.imagenHoyos{
+	width: 180px;
+	height: 550px;
+	border-radius: 20px;
+}
+
+/*Fin de lista de hoyos CANCHA */
+
+/*Animacion del FOOTER para volver arriba*/
+
+.anima{
+	animation-name: arriba;
+	animation-iteration-count: infinite ;
+	animation-timing-function: cubic-bezier(0,.17,1,.84);
+	animation-duration: 3.8s;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	border-radius: 40%;
+}
+
+@keyframes arriba{
+	0%{
+
+	}
+	25%{
+		transform: translatey(25px);
+
+	}
+	50%{
+		transform: translatey(46px);
+		transform: scale(1.9 1.9);
+		background-color: orangered;
+	}
+	75%{
+		transform: translatey(25px);
+	}
+	100%{
+		transform: translatey(0px);
+	}
+}
+
+/*Fin animacion FOOTER*/
+
+
+.logo{
+	width: 70px;
+	border: 4px solid #402E32;
+	border-radius: 35%;
+	margin: 2px 5px 0px 0px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 4px black;
+}
+
+.estiloImagen{
+	width: $tamaño;
+	height: 300;
+	border-radius: 30%;
+	margin: 20px 10px 10px 10px;
+	box-sizing: border-box;
+}
+
+/*formulario de reservas*/
+
+form{
+	width: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+form fieldset{
+	border-radius: 20px;
+	padding: 10px 0px 10px 15px;
+	margin: 0px 0px 10px 15px;
+	background-image: radial-gradient(#53A2B9, #B6D96F);
+}
+
+/*Fin formulario RESERVAS*/
+
+/*TABLA en PROFESORES*/
+table{
+	background-image: url("../foto/pelotita.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 660px 390px;
+	font-weight: 3000;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	align-content: center;
+}
+table td{
+   border: 2px solid lightslategrey;
+   border-collapse: collapse;
+   border-radius: 20px;
+   text-align: center;
+   font-weight: bolder;
+   overflow: hidden;
+}
+
+/*fIN TABLA en PROFESORES*/
+
+/*anidados*/
+
+nav{
+	widows: 100%;
+	text-align: center;
+	position: sticky;
+	z-index: 10;
+	ul {
+		li {
+		padding: 5px;
+		margin-left: 1px;
+		background-color: #008080;
+		display: inline-block;
+		border-style: outset;
+		border-color: #17202A;
+		border-top: 6px solid mintcream;
+		font-weight: bold;
+		font-size: 1.3rem;
+			a{
+			text-decoration: none;
+			color: rgb(28, 28, 28);
+			}
+			a:hover{
+			text-decoration: none;
+			color: rgb(84, 164, 120);
+				
+			}
+			ul{
+				display: none;
+				position: absolute;
+				width: 150px;
+				margin-left: -64px;
+				top: 40px;
+				width:210px ;
+			}
+	}
+		li:hover{
+		background-color: beige;
+		color: rgb(84, 164, 120);
+	}
+		li:hover ul{
+		display: block;
+	
+	}
+	}
+}
+
+
+/*BEN*/
+.centro{
+    justify-items: center; 
+	text-align: center;
+}
+	.centro__logo{
+    width: 70px;
+	border: 4px solid #402E32;
+	border-radius: 35%;
+	margin: 2px 5px 15px 0px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 4px black;
+	}
+
+.encabezado{
+    width: 100%;
+	height: 19rem;  
+	background-size: 100% 20rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	align-items: center;
+	background-image: url("../foto/golf21.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 25rem;
+	justify-content: space-between;
+}
+	.encabezado__p{
+    font-size: 50px;
+	float: left;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: black;
+	text-decoration: none;
+	}
+	.encabezado__logo{
+    width: 250px;
+	height: 250px;
+	align-self: center;
+	}
+.Pie{
+	width: 100%;
+	height: 8rem;
+	font-family: 'Qahiri', sans-serif;
+	background-image: linear-gradient(to right,	peru 40%, black 90% );
+	margin-top: 3em;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+
+}
+	.pie__centrar{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	}
+	.pie__logo{
+	width: 30px;
+ 	height: 30px;
+ 	border-radius: 30px;
+ 	margin-left: 15px;
+	
+	}
+	.Pie__letra{
+	 font-family: fantasy;
+	font-size: 1.1rem;
+	margin-left: 15px;
+	}

@@ -1,0 +1,31 @@
+En las paginas de la WEB inserte <title>:
+
+index : Conociendo la identidad y valores de nuestra casa
+cancha : Visita guiada por nuestra CANCHA, sus HOYOS y el DRIVING.
+Profesores : PROFESORES y HORARIOS para empezar a entrenar.
+Reservas : Hace tu RESERVA para las CLASES y SALIDAS LIBRE
+Autoridades : Descubriendo nuestra historia y sus AUTORIDADES.
+
+Como palabras claves para las paginas y su web utlice:
+
+keywords : golf, clases de golf, clases, driving, cancha.
+
+En las descripciones de las paginas tome en cuenta lo que define cada seccion:
+
+index : Ofrecemos un entorno de golf que permite a los usuarios pasar una estadia de aprendizaje y disfrute.
+cancha : Imagenes de nuestro driving y todos los detalles a tener en cuenta para lanzarse a jugar en nuestro campo de juego
+Profesores : Conociendo nuestro plantel de profesores y sus horarios para tomar clases.
+Reservas : Tenemos todos los horarios a disposicion para que te puedas acomodar y empezar a jugar con nosotros.
+Autoridades : Un poco de historia sobre nuestra cultura de GOLF y sus autoridades.
+
+DESAFIO COMPLEMENTARIO
+
+Le realice modificaciones a las imagenes con los optimizadores para quitarle peso a la web y que tenga un recorrido mas fluido. Paso de pesar 9mb toda la carpeta .rar a 7.5mb.
+Trabaje en el desarrollo de organigrama en la pagina de AUTORIDADES con un PNG para poder optimizarlo y quietarle el fondo que poseia.
+Le aplique diferentes tamaños a los H con Bucles y le añadi diferentes colores de fuentes para que se diferencien segun su importancia.
+Le agregue margen a la lista de diccionario para que no quede pegado al margen izquierdo.
+En la hoja de autoridades le aregue fondo oscuro bold y subrrayado a la descripcion del cargo de las autoridades.
+
+
+
+.
