@@ -128,6 +128,10 @@
     header img{
 		display: none;
 	    }
+    body{
+	 background-color: #e8f8af;
+	 }
+	
     .grids{
 	display: grid;
 	grid-template-areas:
@@ -164,10 +168,15 @@
 	text-align: center;
 	grid-column-gap: 10px ;
 
-}	
+}
+	
 .encabezado{
+<<<<<<< HEAD
     background-image: linear-gradient(to right,	peru 40%, black 90% );
     background-size: auto;
+=======
+    background-image: radial-gradient(rgb(63, 205, 110) 40%, black 90% );
+>>>>>>> 29b15d88e122812d8c029d4a4db41e734ecf3012
     width: 100%;
     height: 8rem;  
     display: block;
