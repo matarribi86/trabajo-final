@@ -481,6 +481,8 @@ footer {
 @media (max-width: 768px) {
   header img {
     display: none; }
+  body {
+    background-color: #e8f8af; }
   .grids {
     display: grid;
     grid-template-areas: "data1" "imagen1" "data4" "imagen4" "data7" "imagen7";
@@ -497,7 +499,6 @@ footer {
     grid-column-gap: 10px; }
   .encabezado {
     background-image: linear-gradient(to right, peru 40%, black 90%);
-    background-size: auto;
     width: 100%;
     height: 8rem;
     display: block;
