@@ -497,6 +497,7 @@ footer {
     grid-column-gap: 10px; }
   .encabezado {
     background-image: linear-gradient(to right, peru 40%, black 90%);
+    background-size: auto;
     width: 100%;
     height: 8rem;
     display: block;
