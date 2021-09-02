@@ -124,8 +124,8 @@ p{
 .importado{
 	width: 100%;
 	height: 450px;
-	padding: 30px 30px 30px 30px;
-	margin: 10px 10px 10px 10px;
+	padding: 30px;
+	margin: 10px;
 	background-image: url("../foto/pelotas.jpg");
 	border-radius: 30px;
 	background-repeat: no-repeat;
@@ -290,6 +290,9 @@ table td{
 /*fIN TABLA en PROFESORES*/
 
 /*anidados*/
+.menu_bar {
+	display:none;
+}
 
 nav{
 	width: 100%;

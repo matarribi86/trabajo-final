@@ -125,7 +125,10 @@
 
     @media(min-width: 769px){}
 @media(max-width: 768px) {
-.grids{
+    header img{
+		display: none;
+	    }
+    .grids{
 	display: grid;
 	grid-template-areas:
 	"data1"
@@ -140,7 +143,7 @@
 	align-items: center;
 
 }
-.gridsIndex{
+.gridCuerpo{
 	display: grid;
 	grid-template-areas: 
 	"mennu"
@@ -152,78 +155,66 @@
 	"imagenFigura"
 	"videoDescripcion"
 	"video"
-	"mapa"
+	"mappa"
 	"calendario"
 ;
 	grid-template-columns: 1fr;
-	grid-template-rows: 0.03fr 0.1fr 0.08fr 0.5fr 1fr 0.4fr 1fr 0.4fr 0.5fr 0.5fr 0.5fr;
+	grid-template-rows: 0.03fr 0.1fr 0.08fr 0.5fr 1fr 0.4fr 1fr 0.4fr 0.2fr 0.5fr 0.7fr;
 	align-items: center;
 	text-align: center;
 	grid-column-gap: 10px ;
 
 }	
+.encabezado{
+    background-image: linear-gradient(to right,	peru 40%, black 90% );
+    width: 100%;
+    height: 8rem;  
+    display: block;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: center;
+}
+    .encabezado__logo{
+    display: none;
+    }
+    .encabezado__p{
+    font-size: 50px;
+    float: left;
+    margin-top: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    }
+
+nav{
+    display: none;
 }
 
-@media(max-width: 576px){
-	.encabezado{align-items: start;
-		justify-content: center;
-		}
-	.tamañoEspecial{
-		font-size: 3.5rem;
-		font-weight: bolder;
-		font-style: oblique;
-		color: black;
-		animation: flash;
-		animation-duration: 6s !important;
-		animation-delay: 2s ;
+p{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.Pie__letra{
+    font-family: fantasy;
+   font-size: 0.8rem;
+   margin-left: 15px;
+   }
+.pie__empresa{
+    display: none;
+}
+.importado{
+	width: 100%;
+	padding: 20px;
+	margin: 20px;
+	background-image: url("../foto/pelotas.jpg");
+	border-radius: 30px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+    align-items: center;
+}
 
-	}
-
-	header img{
-		display: none;
-	}
-    .encabezado{
-        background-image: linear-gradient(to right,	peru 40%, black 90% );
-        width: 100%;
-	    height: 8rem;  
-	    display: block;
-	    flex-wrap: wrap;
-	    overflow: hidden;
-        text-align: center;
-    }
-    .encabezado__logo{
-        display: none;
-        }
-        .encabezado__p{
-        font-size: 50px;
-        float: left;
-        margin-top: 0px;
-        padding: 0px;
-        font-weight: bold;
-        color: black;
-        text-decoration: none;
-        }
-    #menu {
-        width: 300px;
-        height: 100%;
-        position: fixed;
-        margin-left: 0px;
-    }
-    nav ul li{
-        display: block;
-        float: none;
-        border-bottom: rgba(255,255,255, .3);
-        margin-left: 0px;
-        padding-left: 0px;
-        width: 100%;
-        height: 100%;
-    }
-    nav ul li ul{
-        display: none;
-        position: absolute;
-        width: 150px;
-        margin-left: 230px;
-        top: 90px;
-        
-    }
 }
