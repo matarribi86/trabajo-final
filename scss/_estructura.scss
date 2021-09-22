@@ -13,7 +13,7 @@ $tamaño:80%;
 }
 h1{	
 	color: #ABB2B9;
-	background-color: darkcyan;
+	background-color: #008b8b;
 	font-size: 2.3rem;
 	margin: 10px 0px 40px 0px;
 	font-style: italic;
@@ -26,15 +26,19 @@ h2{
 	text-decoration: underline;
    margin: 15px 20px 30px 20px;
 	padding: 20px;
-	width: 500px;
+	width: 100%;
 }
 
 h3{
 	color: firebrick;
 	text-decoration: underline;
-	margin: 20px 20px 20px 20px;
-	padding: 15px;
-	width: 200px;
+	margin: 20px 10px 20px 10px;
+	padding: 5px;
+	width: 100px;
+}
+h6{
+	margin-bottom: 3px;
+	padding-bottom: 1px;
 }
 p{
 	font-size: 1.0rem;
@@ -180,16 +184,16 @@ dl dd {
 }
 li{
 	list-style: none;
-	padding-left: 10px;
-	font-size: 19px;
+	padding-left: 5px;
+	font-size: 12px;
 }
 div ol li h2{
-	font-size: 1.5rem;
-	margin-bottom: 15px;
+	font-size: 1.3rem;
+	margin: 0px 0px 15px 45px;
 }
 .imagenHoyos{
-	width: 180px;
-	height: 550px;
+	width: 160px;
+	height: 520px;
 	border-radius: 20px;
 }
 
@@ -243,10 +247,8 @@ div ol li h2{
 
 .estiloImagen{
 	width: $tamaño;
-	height: 300;
 	border-radius: 30%;
 	margin: 20px 10px 10px 10px;
-	box-sizing: border-box;
 }
 
 /*formulario de reservas*/
@@ -271,7 +273,7 @@ table{
 	background-image: url("../foto/pelotita.jpg");
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	background-size: 660px 390px;
+	background-size: 680px 390px;
 	font-weight: 3000;
 	margin-left: auto;
 	margin-right: auto;
@@ -371,6 +373,7 @@ nav{
 	.encabezado__p{
     font-size: 50px;
 	float: left;
+	width: 350PX;
 	font-weight: bold;
 	margin-top: 10px;
 	margin-left: 10px;

@@ -22,7 +22,7 @@ h6 {
 
 h1 {
   color: #ABB2B9;
-  background-color: darkcyan;
+  background-color: #008b8b;
   font-size: 2.3rem;
   margin: 10px 0px 40px 0px;
   font-style: italic;
@@ -35,14 +35,18 @@ h2 {
   text-decoration: underline;
   margin: 15px 20px 30px 20px;
   padding: 20px;
-  width: 500px; }
+  width: 100%; }
 
 h3 {
   color: firebrick;
   text-decoration: underline;
-  margin: 20px 20px 20px 20px;
-  padding: 15px;
-  width: 200px; }
+  margin: 20px 10px 20px 10px;
+  padding: 5px;
+  width: 100px; }
+
+h6 {
+  margin-bottom: 3px;
+  padding-bottom: 1px; }
 
 p {
   font-size: 1.0rem;
@@ -173,16 +177,16 @@ dl dd {
 
 li {
   list-style: none;
-  padding-left: 10px;
-  font-size: 19px; }
+  padding-left: 5px;
+  font-size: 12px; }
 
 div ol li h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px; }
+  font-size: 1.3rem;
+  margin: 0px 0px 15px 45px; }
 
 .imagenHoyos {
-  width: 180px;
-  height: 550px;
+  width: 160px;
+  height: 520px;
   border-radius: 20px; }
 
 /*Fin de lista de hoyos CANCHA */
@@ -221,10 +225,8 @@ div ol li h2 {
 
 .estiloImagen {
   width: 80%;
-  height: 300;
   border-radius: 30%;
-  margin: 20px 10px 10px 10px;
-  box-sizing: border-box; }
+  margin: 20px 10px 10px 10px; }
 
 /*formulario de reservas*/
 form {
@@ -244,7 +246,7 @@ table {
   background-image: url("../foto/pelotita.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-size: 660px 390px;
+  background-size: 680px 390px;
   font-weight: 3000;
   margin-left: auto;
   margin-right: auto;
@@ -328,6 +330,7 @@ nav {
 .encabezado__p {
   font-size: 50px;
   float: left;
+  width: 350PX;
   font-weight: bold;
   margin-top: 10px;
   margin-left: 10px;
@@ -396,6 +399,43 @@ main {
 
 footer {
   grid-area: pie; }
+
+.gridCancha {
+  display: grid;
+  grid-template-areas: "indice    indice" "titulo    titulo" "descripcion  casa" "driving1  driving2" "descripcion2 descripcion2" "fotoAerea   fotoAerea" "grids       grids";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.04fr 0.05fr 0.1fr 0.1fr 0.04fr 0.2fr 1fr;
+  align-items: center;
+  text-align: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.indice {
+  grid-area: indice; }
+
+.titulo {
+  grid-area: titulo; }
+
+#descripcion {
+  grid-area: descripcion; }
+
+#casa {
+  grid-area: casa; }
+
+#driving1 {
+  grid-area: driving1; }
+
+#driving2 {
+  grid-area: driving2; }
+
+#descripcion2 {
+  grid-area: descripcion2; }
+
+#fotoAerea {
+  grid-area: fotoAerea; }
+
+#grids {
+  grid-area: grids; }
 
 .gridCuerpo {
   display: grid;
@@ -478,17 +518,30 @@ footer {
   grid-area: imagen7;
   justify-self: center; }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header img {
     display: none; }
   body {
     background-color: #e8f8af; }
+  h1 {
+    color: #ABB2B9;
+    background-color: darkcyan;
+    font-size: 2.8rem;
+    margin: 10px 0px 40px 0px;
+    font-style: italic;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 2px; }
   .grids {
     display: grid;
     grid-template-areas: "data1" "imagen1" "data4" "imagen4" "data7" "imagen7";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
     align-items: center; }
+  .imagenHoyos {
+    width: 150px;
+    height: 480px;
+    border-radius: 20px; }
   .gridCuerpo {
     display: grid;
     grid-template-areas: "mennu" "logos" "titulo" "identidad" "imagenesCancha" "figuras" "imagenFigura" "videoDescripcion" "video" "mappa" "calendario";
@@ -497,8 +550,18 @@ footer {
     align-items: center;
     text-align: center;
     grid-column-gap: 10px; }
+  .gridCancha {
+    display: grid;
+    grid-template-areas: "indice" "titulo" "descripcion" "casa" "driving1" "driving2" "descripcion2" "fotoAerea" "grids";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 0.01fr 0.06fr 0.08fr 0.09fr 0.09fr 0.02fr 0.06fr 1fr;
+    align-items: center;
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
   .encabezado {
-    background-image: linear-gradient(to right, peru 40%, black 90%);
+    background-image: radial-gradient(#3fcd6e 40%, black 90%);
+    background-size: 100% 10rem;
     width: 100%;
     height: 10rem;
     display: block;
@@ -509,7 +572,8 @@ footer {
     display: none; }
   .encabezado__p {
     font-size: 50px;
-    float: left;
+    display: block;
+    width: 100%;
     margin-top: 0px;
     padding: 0px;
     font-weight: bold;
@@ -536,7 +600,36 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     box-sizing: border-box;
-    align-items: center; } }
+    align-items: center; }
+  table {
+    background-image: url("../foto/pelotita.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 680px 390px;
+    font-weight: 3000;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    align-content: center; }
+  table th {
+    font-size: 12px; }
+  table tr {
+    font-size: 12px; }
+  table tr img {
+    width: 15px;
+    height: 15px; }
+  form {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; }
+  .listaHoyos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px dashed black;
+    padding: 5px 30px 20px 30px;
+    border-radius: 25px;
+    margin: 20px;
+    list-style: none; } }
 
 * {
   margin: 0;
