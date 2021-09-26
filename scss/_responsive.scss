@@ -12,16 +12,16 @@
         grid-column-gap: 10px ;
         grid-row-gap: 10px ;
     }
-    header{
+header{
         grid-area: cabeza;
     }
-    main {
+main {
         grid-area: cuerpo;
     }
-    footer{
+footer{
         grid-area: pie;
     }
-    .gridCancha{
+.gridCancha{
         display: grid;
         grid-template-areas: 
         "indice    indice"
@@ -39,36 +39,36 @@
         grid-column-gap: 10px ;
         grid-row-gap: 10px ;
     }
-    .indice{
+.indice{
         grid-area: indice;
     }
-    .titulo{
+.titulo{
         grid-area: titulo;
     }
-    #descripcion{
+#descripcion{
         grid-area: descripcion;
     }
-    #casa{
+#casa{
         grid-area: casa;
     }
-    #driving1{
+#driving1{
         grid-area: driving1;
     }
-    #driving2{
+#driving2{
         grid-area: driving2;
     }
-    #descripcion2{
+#descripcion2{
         grid-area: descripcion2;
     }
-    #fotoAerea{
+#fotoAerea{
         grid-area: fotoAerea;
     }
-    #grids{
+#grids{
         grid-area: grids;
     }
 
 
-    .gridCuerpo{
+.gridCuerpo{
         display: grid;
         grid-template-areas: 
         "mennu             mennu"
@@ -87,48 +87,47 @@
         grid-row-gap: 10px ;
     
     }
-    #menu{
+#menu{
         grid-area: mennu;
     }
-    #logos{
+#logos{
         grid-area: logos;
     }
-    .titulo{
+.titulo{
         grid-area: titulo;
         text-align: left;
     }
-    #imagenesCancha{
+#imagenesCancha{
         grid-area: imagenesCancha;
     }
-    #identidad{
+#identidad{
         grid-area: identidad;
     }
-    #imagenFigura{
+#imagenFigura{
         grid-area: imagenFigura;
     }
-    #figuras{
+#figuras{
         grid-area: figuras;
     }
-    #videoDescripcion{
+#videoDescripcion{
         grid-area: videoDescripcion;
     }
-    #videoSemanal{
+#videoSemanal{
         grid-area: video;
     }
-    #mapa{
+#mapa{
         grid-area: mappa;
     }
-    #calendarioIndex{
+#calendarioIndex{
         grid-area: calendario;
     }
 
-    .grids{
+.grids{
         display: grid;
         grid-template-areas:
         "data1    imagen1"
         "imagen4  data4"
-        "data7    imagen7"
-    ;
+        "data7    imagen7";
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;	
@@ -136,40 +135,44 @@
     
     }
     
-    .data123{
+.data123{
         grid-area: data1;
         box-sizing: border-box;
         overflow: hidden;
         margin: 10px 15px;
     
     }
-    .data456{
+.data456{
         grid-area: data4;
         box-sizing: border-box;
         overflow: hidden;
         margin: 10px 15px;
     }
-    .data789{
+.data789{
         grid-area: data7;
         box-sizing: border-box;
         overflow: hidden;
         margin: 10px 15px;
     }
-    .imagen123{
+.imagen123{
         grid-area: imagen1;
         justify-self: center;
         
     }
-    .imagen456{
+.imagen456{
         grid-area: imagen4;
         justify-self: center;
     }
-    .imagen789{
+.imagen789{
         grid-area: imagen7;
         justify-self: center;
     }
 
-    @media(min-width: 801px){}
+@media(min-width: 801px){
+    .clases{
+        display: none;
+    }
+    }
 @media(max-width: 800px) {
     header img{
 		display: none;
@@ -195,19 +198,18 @@
 	"data4"
 	"imagen4"
 	"data7"
-	"imagen7"
-;
+	"imagen7";
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
 	align-items: center;
 
-}
-.imagenHoyos{
+    }
+    .imagenHoyos{
 	width: 150px;
 	height: 480px;
 	border-radius: 20px;
-}
-.gridCuerpo{
+    }
+    .gridCuerpo{
 	display: grid;
 	grid-template-areas: 
 	"mennu"
@@ -220,16 +222,15 @@
 	"videoDescripcion"
 	"video"
 	"mappa"
-	"calendario"
-;
+	"calendario";
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.03fr 0.1fr 0.08fr 0.5fr 1fr 0.4fr 1fr 0.4fr 0.2fr 0.5fr 0.7fr;
 	align-items: center;
 	text-align: center;
 	grid-column-gap: 10px ;
 
-}
-.gridCancha{
+    }
+    .gridCancha{
     display: grid;
     grid-template-areas: 
     "indice"
@@ -240,17 +241,16 @@
     "driving2"
     "descripcion2"
     "fotoAerea"
-    "grids"
-    ;
+    "grids";
     grid-template-columns: 1fr;
     grid-template-rows: 0.02fr 0.01fr 0.06fr 0.08fr 0.09fr 0.09fr 0.02fr 0.06fr 1fr;
     align-items: center;
     text-align: center;
     grid-column-gap: 10px ;
     grid-row-gap: 10px ;
-}
+    }
 	
-.encabezado{
+    .encabezado{
     background-image: radial-gradient(	rgb(63, 205, 110) 40%, black 90% );
     background-size: 100% 10rem;
     width: 100%;
@@ -259,41 +259,41 @@
     flex-wrap: wrap;
     overflow: hidden;
     text-align: center;
-}
-
-    .encabezado__logo{
-    display: none;
-    }
-    .encabezado__p{
-    font-size: 50px;
-    display: block;
-    width: 100%;
-    margin-top: 0px;
-    padding: 0px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
     }
 
-nav{
-    display: none;
-}
+        .encabezado__logo{
+        display: none;
+        }
+        .encabezado__p{
+        font-size: 50px;
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+        padding: 0px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        }
 
-p{
+    nav{
+    display: none;
+    }
+
+    p{
     width: 100%;
-}
-img{
+    }
+    img{
     width: 100%;
-}
-.Pie__letra{
+    }
+    .Pie__letra{
     font-family: fantasy;
-   font-size: 0.8rem;
-   margin-left: 15px;
-   }
-.pie__empresa{
+    font-size: 0.8rem;
+    margin-left: 15px;
+    }
+    .pie__empresa{
     display: none;
-}
-.importado{
+    }
+    .importado{
 	width: 100%;
 	padding: 20px;
 	margin: 20px;
@@ -303,8 +303,8 @@ img{
 	background-size: 100% 100%;
 	box-sizing: border-box;
     align-items: center;
-}
-table{
+    }
+    table{
 	background-image: url("../foto/pelotita.jpg");
 	background-attachment: scroll;
 	background-repeat: no-repeat;
@@ -314,24 +314,24 @@ table{
 	margin-right: auto;
 	border-radius: 20px;
 	align-content: center;
-}
+    }
 
-table th{
+    table th{
     font-size: 12px;
-}
-table tr{
+    }
+    table tr{
     font-size: 12px;
-}
-table tr img{
+    }
+    table tr img{
     width: 15px;
     height: 15px;
-}
-form{
+    }
+    form{
     width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
-}
-.listaHoyos{
+    }
+    .listaHoyos{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	border: 2px dashed black;
@@ -339,5 +339,23 @@ form{
 	border-radius: 25px;
 	margin: 20px;
 	list-style: none;
-}
-}
+    }
+    }
+@media(max-width: 541px) {
+    .grupal{
+    display:inline-block;
+    }
+    .horario{
+    display: none;
+    }
+    h1{	
+	color: #ABB2B9;
+	background-color: #008b8b;
+	font-size: 2.3rem;
+	margin: 10px 0px 40px 0px;
+	font-style: italic;
+	text-transform: uppercase;
+	width: 100%;
+	letter-spacing: 2px;
+    }
+    }

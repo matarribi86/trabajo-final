@@ -36,10 +36,7 @@ h3{
 	padding: 5px;
 	width: 100px;
 }
-h6{
-	margin-bottom: 3px;
-	padding-bottom: 1px;
-}
+
 p{
 	font-size: 1.0rem;
 	text-align: justify;
@@ -53,6 +50,9 @@ p{
 	border: 1px dashed black;
 	border-radius: 20px;
 
+}
+img{
+	margin:10px;
 }
 
 .margen{
@@ -101,7 +101,7 @@ p{
 
 /*flex a los Div de CANCHA para ordenar las imagenes */
 
- .flexElementos{
+.flexElementos{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
