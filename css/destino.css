@@ -633,7 +633,12 @@ footer {
     padding: 5px 30px 20px 30px;
     border-radius: 25px;
     margin: 20px;
-    list-style: none; } }
+    list-style: none; }
+  .flexSinBorde {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
 
 @media (max-width: 541px) {
   .grupal {

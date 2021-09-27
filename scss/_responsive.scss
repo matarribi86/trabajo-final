@@ -340,7 +340,15 @@ footer{
 	margin: 20px;
 	list-style: none;
     }
+    .flexSinBorde{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     }
+    
+    }
+
 @media(max-width: 541px) {
     .grupal{
     display:inline-block;
