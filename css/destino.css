@@ -361,7 +361,8 @@ nav {
 .pie__centrar {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .pie__logo {
   width: 30px;
